@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samonto's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <header class="p-6 bg-gray-800 flex justify-between items-center">
+  <header class="p-6 bg-gray-800 flex justify-between items-center sticky top-0 z-50">
     <h1 class="text-2xl font-bold">Samonto</h1>
     <nav class="space-x-4">
       <a href="#home" class="hover:text-teal-400">Home</a>
@@ -17,52 +18,86 @@
     </nav>
   </header>
 
-  <section id="home" class="text-center py-20">
+  <section id="home" class="text-center py-20" data-aos="fade-up">
     <img src="profile-picture.jpg" alt="Samonto" class="mx-auto w-32 h-32 rounded-full mb-4 border-4 border-teal-400" />
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Samonto 👋</h2>
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm Samonto 👋</h2>
+    <p class="text-teal-400 font-mono mb-4">Web Dev in Progress — Building Projects with AI + Code</p>
     <p class="text-lg text-gray-300 max-w-xl mx-auto">
       A beginner web developer learning by building. I use HTML, CSS, JavaScript, and AI tools to create websites.
     </p>
+    <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded mt-6 inline-block">Let’s Work Together</a>
   </section>
 
-  <section id="about" class="py-20 bg-gray-800 text-center">
+  <section id="about" class="py-20 bg-gray-800 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-4">About Me</h2>
     <p class="text-gray-300 max-w-2xl mx-auto">
       I'm on a journey to become a freelance web developer. Currently focused on building clean, responsive websites and improving my skills daily.
     </p>
   </section>
 
-  <section id="projects" class="py-20 text-center">
+  <section id="projects" class="py-20 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-8">Projects</h2>
-    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Project 1 -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-teal-500/50 transition">
+        <img src="project1.jpg" alt="Landing Page" class="rounded mb-4" />
         <h3 class="text-xl font-bold mb-2">Simple Landing Page</h3>
-        <p class="text-gray-400 mb-4">A clean landing page built using HTML, CSS, and AI support.</p>
-        <a href="#" class="text-teal-400 underline" target="_blank">View Live</a>
+        <p class="text-gray-400 mb-3">A clean landing page built using HTML, CSS, and AI support.</p>
+        <div class="mb-3 space-x-2">
+          <span class="text-xs bg-teal-600 px-2 py-1 rounded">HTML</span>
+          <span class="text-xs bg-purple-600 px-2 py-1 rounded">CSS</span>
+        </div>
+        <a href="#" class="text-teal-400 underline mr-4" target="_blank">View Live</a>
+        <a href="#" class="text-gray-400 underline" target="_blank">View Code</a>
       </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+
+      <!-- Project 2 -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-teal-500/50 transition">
+        <img src="project2.jpg" alt="Cafe Website" class="rounded mb-4" />
         <h3 class="text-xl font-bold mb-2">Cafe Website</h3>
-        <p class="text-gray-400 mb-4">A mock website for a local cafe. Responsive layout using Tailwind.</p>
-        <a href="#" class="text-teal-400 underline" target="_blank">View Live</a>
+        <p class="text-gray-400 mb-3">A mock website for a local cafe. Responsive layout using Tailwind.</p>
+        <div class="mb-3 space-x-2">
+          <span class="text-xs bg-teal-600 px-2 py-1 rounded">TailwindCSS</span>
+          <span class="text-xs bg-yellow-500 px-2 py-1 rounded">Responsive</span>
+        </div>
+        <a href="#" class="text-teal-400 underline mr-4" target="_blank">View Live</a>
+        <a href="#" class="text-gray-400 underline" target="_blank">View Code</a>
       </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+
+      <!-- Project 3 -->
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-teal-500/50 transition">
+        <img src="project3.jpg" alt="Yoga Coach" class="rounded mb-4" />
         <h3 class="text-xl font-bold mb-2">Yoga Coach Portfolio</h3>
-        <p class="text-gray-400 mb-4">Simple site for a personal trainer showcasing services and contact form.</p>
-        <a href="#" class="text-teal-400 underline" target="_blank">View Live</a>
+        <p class="text-gray-400 mb-3">Simple site for a personal trainer showcasing services and contact form.</p>
+        <div class="mb-3 space-x-2">
+          <span class="text-xs bg-teal-600 px-2 py-1 rounded">HTML</span>
+          <span class="text-xs bg-pink-500 px-2 py-1 rounded">UI Design</span>
+        </div>
+        <a href="#" class="text-teal-400 underline mr-4" target="_blank">View Live</a>
+        <a href="#" class="text-gray-400 underline" target="_blank">View Code</a>
       </div>
+
     </div>
   </section>
 
-  <section id="contact" class="py-20 bg-gray-800 text-center">
+  <section id="contact" class="py-20 bg-gray-800 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-4">Contact</h2>
-    <p class="text-gray-300">
-      Reach out via <a href="mailto:samonto.dev@gmail.com" class="text-teal-400 underline">email</a> or find me on
-      <a href="https://www.linkedin.com/in/samontoparvez" class="text-teal-400 underline" target="_blank">LinkedIn</a>.
-    </p>
+    <p class="text-gray-300 mb-6">Want to work together or just say hi?</p>
+    <form action="https://formspree.io/f/your-id-here" method="POST" class="max-w-md mx-auto text-left">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 mb-4 rounded bg-gray-700 text-white" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 rounded bg-gray-700 text-white" />
+      <textarea name="message" placeholder="Your Message" required class="w-full p-3 mb-4 rounded bg-gray-700 text-white"></textarea>
+      <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded w-full">Send Message</button>
+    </form>
+    <p class="text-sm mt-4">or email me at <a href="mailto:samontoparvez2810@gmail.com" class="underline text-teal-400">samontoparvez2810@gmail.com</a></p>
   </section>
 
   <footer class="p-4 bg-gray-900 text-center text-gray-500">
     © 2025 Samonto. Built with 💻 and ☕.
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
